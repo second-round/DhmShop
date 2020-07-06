@@ -3,6 +3,7 @@ package dhm.com.dhmshop.view.mine;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -46,6 +47,9 @@ public class AddressActivity extends BaseActiity implements LoginContract.IView 
         pressenter.attachView(this);
         uid = SpUtils.getString(AddressActivity.this, "uid");
         getWindow().setStatusBarColor(Color.LTGRAY);
+
+
+
     }
 
     @Override
@@ -63,6 +67,7 @@ public class AddressActivity extends BaseActiity implements LoginContract.IView 
         });
         recy.setLayoutManager(linearLayoutManager);
         recy.setAdapter(showAddrAdapter);
+
         getaddr();
     }
 

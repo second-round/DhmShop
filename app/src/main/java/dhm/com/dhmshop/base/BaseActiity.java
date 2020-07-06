@@ -16,7 +16,6 @@ import android.view.WindowManager;
 import dhm.com.dhmshop.utils.StatusBarUtil;
 
 import static android.view.View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
-
 public abstract class BaseActiity extends AppCompatActivity {
 
 

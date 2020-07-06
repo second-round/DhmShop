@@ -3,10 +3,12 @@ package dhm.com.dhmshop.view;
 import android.app.Application;
 import android.content.Context;
 import android.os.Handler;
+import android.support.multidex.MultiDex;
+import android.support.multidex.MultiDexApplication;
 
 import com.facebook.drawee.backends.pipeline.Fresco;
 
-public class App extends Application {
+public class App extends MultiDexApplication {
 
 
     /** 主线程ID */
@@ -48,5 +50,9 @@ public class App extends Application {
     public static Handler getMainThreadHandler() {
         return mMainThreadHandler;
     }
-
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        MultiDex.install(this);
+    }
 }

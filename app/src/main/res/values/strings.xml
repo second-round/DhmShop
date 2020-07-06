@@ -5,6 +5,8 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+
+
     <string name="permission_get_accounts_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_GET_ACCOUNTS</string>
     <string name="permission_read_phone_hint">读取手机权限</string>
     <string name="permission_call_phone_hint">请打开电话权限</string>

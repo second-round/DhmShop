@@ -202,4 +202,5 @@
         android:layout_centerInParent="true"
         android:layout_marginTop="@dimen/dp_250"
         />
+>>>>>>> 21b9becd14cbe3394518b4702e2223a21048fb54
 </RelativeLayout>

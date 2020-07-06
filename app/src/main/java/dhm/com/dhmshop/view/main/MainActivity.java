@@ -21,10 +21,10 @@ import java.util.ArrayList;
 import dhm.com.dhmshop.R;
 import dhm.com.dhmshop.adapter.MainVpFgAdapter;
 import dhm.com.dhmshop.base.BaseActiity;
-import dhm.com.dhmshop.fragment.classification.ClassificationFragment;
-import dhm.com.dhmshop.fragment.home.HomeFragment;
 import dhm.com.dhmshop.fragment.shoppingcart.ShoppingcartFragment;
 import dhm.com.dhmshop.fragment.wode.WodeFragment;
+import dhm.com.dhmshop.framework.module.home.fragment.HomeFragment;
+import dhm.com.dhmshop.framework.module.type.fragment.ClassIficationFragment;
 
 public class MainActivity extends BaseActiity implements View.OnClickListener {
 
@@ -35,7 +35,7 @@ public class MainActivity extends BaseActiity implements View.OnClickListener {
     private ArrayList<String> titles;
     private ArrayList<Fragment> fragments;
     private HomeFragment homeFragment;
-    private ClassificationFragment classificationFragment;
+    private ClassIficationFragment classificationFragment;
     private ShoppingcartFragment shoppingcartFragment;
     private WodeFragment wodeFragment;
     private MainVpFgAdapter mainVpFgAdapter;
@@ -67,7 +67,7 @@ public class MainActivity extends BaseActiity implements View.OnClickListener {
         //四个fragments
         fragments = new ArrayList<>();
         homeFragment = new HomeFragment();
-        classificationFragment = new ClassificationFragment();
+        classificationFragment = new ClassIficationFragment();
         shoppingcartFragment = new ShoppingcartFragment();
         wodeFragment = new WodeFragment();
         fragments.add(homeFragment);
